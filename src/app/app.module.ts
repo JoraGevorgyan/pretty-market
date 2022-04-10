@@ -8,6 +8,8 @@ import { ProductsComponent } from './products/products.component';
 import { ChatComponent } from './chat/chat.component';
 import { BrokerComponent } from './broker/broker.component';
 import { AuthComponent } from './auth/auth.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { AuthComponent } from './auth/auth.component';
     ProductsComponent,
     ChatComponent,
     BrokerComponent,
-    AuthComponent
+    AuthComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
