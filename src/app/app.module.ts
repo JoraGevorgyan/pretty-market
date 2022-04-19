@@ -10,6 +10,7 @@ import { BrokerComponent } from './broker/broker.component';
 import { AuthComponent } from './auth/auth.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {RouterModule} from "@angular/router";
+import {AppRoutingModules} from "./app-routing.modules";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import {RouterModule} from "@angular/router";
   ],
   imports: [
     BrowserModule,
-    RouterModule,
+    AppRoutingModules,
   ],
   providers: [],
   bootstrap: [AppComponent]
