@@ -11,6 +11,7 @@ import { AuthComponent } from './auth/auth.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {RouterModule} from "@angular/router";
 import {AppRoutingModules} from "./app-routing.modules";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {AppRoutingModules} from "./app-routing.modules";
     ChatComponent,
     BrokerComponent,
     AuthComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
