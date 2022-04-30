@@ -12,6 +12,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {RouterModule} from "@angular/router";
 import {AppRoutingModules} from "./app-routing.modules";
 import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { HomeComponent } from './home/home.component';
     PageNotFoundComponent,
     HomeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModules,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModules,
+        NgbModule,
+        ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
