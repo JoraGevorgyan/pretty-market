@@ -52,7 +52,7 @@ header>ul>li:hover{
 .page{
 	width: 100%;
 	height: 600px;
-	background-image: url(../img/1.webp);
+	background-image: url(./img/1.webp);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -113,7 +113,7 @@ header>ul>li:hover{
 .item{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/2.webp);
+	background-image: url(./img/2.webp);
 	background-size: cover;
 }
 .page2{
@@ -226,7 +226,7 @@ header>ul>li:hover{
 .page4{
 	width: 100%;
 	height: 700px;
-	background-image: url(../img/04.webp);
+	background-image: url(./img/04.webp);
 	background-size: cover;
 }
 .page4>div{
