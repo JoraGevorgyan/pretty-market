@@ -1,5 +1,11 @@
 
-<div class="page3">
+<div class="row products">
+<div class="d-flex align-items-center ">
+    <input (keyup)="" type="search">
+    <button >SET</button>
+</div>
+
+
 <div class="card" *ngFor="let product of getProducts()">
     <img src="/assets{{product.img}}" alt="Avatar" style="width:100%">
     <div class="container">
@@ -7,6 +13,5 @@
         <p>{{product.description}}</p>
     </div>
 </div>
-
 </div>
 
