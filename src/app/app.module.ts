@@ -1,39 +1,40 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import { BuyComponent } from './buy/buy.component';
-import { SellComponent } from './sell/sell.component';
-import { ProductsComponent } from './products/products.component';
-import { ChatComponent } from './chat/chat.component';
-import { BrokerComponent } from './broker/broker.component';
-import { AuthComponent } from './auth/auth.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {AppComponent} from './app.component';
+import {BuyComponent} from './buy/buy.component';
+import {SellComponent} from './sell/sell.component';
+import {ProductsComponent} from './products/products.component';
+import {ChatComponent} from './chat/chat.component';
+import {BrokerComponent} from './broker/broker.component';
+import {AuthComponent} from './auth/auth.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {RouterModule} from "@angular/router";
 import {AppRoutingModules} from "./app-routing.modules";
-import { HomeComponent } from './home/home.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HomeComponent} from './home/home.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BuyComponent,
-    SellComponent,
-    ProductsComponent,
-    ChatComponent,
-    BrokerComponent,
-    AuthComponent,
-    PageNotFoundComponent,
-    HomeComponent
-  ],
+    declarations: [
+        AppComponent,
+        BuyComponent,
+        SellComponent,
+        ProductsComponent,
+        ChatComponent,
+        BrokerComponent,
+        AuthComponent,
+        PageNotFoundComponent,
+        HomeComponent
+    ],
     imports: [
         BrowserModule,
         AppRoutingModules,
         NgbModule,
         ReactiveFormsModule,
     ],
-  providers: [],
-  bootstrap: [AppComponent]
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

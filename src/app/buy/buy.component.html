@@ -11,7 +11,7 @@
             <h4><b>{{product.name}}</b></h4>
             <p>
                 <del *ngIf="product.sellPercent !== 0">{{product.price}}$</del>
-            <span>{{getCurrentPrice(product)}}$</span>
+                <span>{{getCurrentPrice(product)}}$</span>
             </p>
             <p>{{product.description}}</p>
         </div>

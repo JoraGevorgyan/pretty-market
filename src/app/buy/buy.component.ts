@@ -83,8 +83,8 @@ export class BuyComponent implements OnInit {
 
     }
 
-    getCurrentPrice (product: Product):number {
-        return product.price * (1- product.sellPercent/100);
+    getCurrentPrice(product: Product): number {
+        return product.price * (1 - product.sellPercent / 100);
     }
 
     searchProducts(e: any) {
