@@ -1,1 +1,366 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: #000000d9;
+    display: flex;
+    position: fixed;
+    z-index: 223;
+}
+header div{
+    width: 30%;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+header>div>h1{
+    color:white;
+    font-size: 40px;
+    font-family: tahoma;
+    cursor: pointer;
+
+
+}
+header>div>h1>span{
+    color: silver;
+
+}
+header>ul{
+    width: 69%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+header>ul>li{
+    color: silver;
+    list-style:none;
+    font-size: 22px;
+    font-family: tahoma;
+    font-weight:lighter;
+    transition: 0.5s;
+}
+header>ul>li:hover{
+    cursor: pointer;
+    color: white;
+}
+.page{
+    width: 100%;
+    height: 600px;
+    background-image: url(./assets/img/1.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.page>div{
+    width: 70%;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    padding-top: 250px;
+}
+.page>div>h1{
+    font-size: 80px;
+    font-family: tahoma;
+    color: white;
+    font-weight: lighter;
+}
+.page>div>h2{
+    font-size: 80px;
+    font-family: tahoma;
+    color: white;
+    font-weight: lighter;
+    word-spacing: 30px;
+}
+.page1{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background: black;
+}
+.item1{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+}
+.item1>h1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    font-family: tahoma;
+    font-size: 40px;
+    color: white;
+
+}
+.item1>h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    transition: 0.5s;
+}
+.item1>h2:hover{
+    cursor: pointer;
+    color: silver;
+}
+.item{
+    width: 50%;
+    height: 100%;
+    background-image: url(./assets/img/2.webp);
+    background-size: cover;
+}
+.page2{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.page2>div{
+    width:33.3333%;
+    height: 100%;
+    position: relative;
+}
+.page2>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.product{
+    width: 100%;
+    height: 100%;
+    background: #000000d9;
+    position: absolute;
+    top: 0;
+    opacity:0.0;
+    color: white;
+}
+.product:hover{
+    opacity:1;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.product>h3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.page3{
+    width: 100%;
+    height: 800px;
+    background: black;
+}
+.page3>h1{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: tahoma;
+    font-size: 50px;
+    color: white;
+    font-weight: lighter;
+}
+.page3>h2{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: lighter;
+}
+.nkar{
+    width:70%;
+    height: 300px;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.nkar>div{
+    width: 33%;
+    height: 100%;
+}
+.nkar>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.nkar1{
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.nkar1>div>h1{
+    color: white;
+    font-family: tahoma;
+    font-weight: lighter;
+    font-size: 25px;
+    padding-top: 30px;
+}
+.barev>h2{
+    color: white;
+    padding-top: 20px;
+    font-family: tahoma;
+    font-weight: lighter;
+    font-size: 16px;
+}
+.barev span{
+    text-decoration:line-through;
+}
+.page4{
+    width: 100%;
+    height: 700px;
+    background-image: url(./assets/img/04.webp);
+    background-size: cover;
+}
+.page4>div{
+    width: 50%;
+    height: 100%;
+    background: #000000d9;
+    color: white;
+    font-family: tahoma;
+}
+.page4>div>h1{
+    padding-left: 150px;
+    padding-top: 200px;
+}
+.page4>div>p{
+    width: 65%;
+    padding-left: 150px;
+}
+.page5{
+    width: 100%;
+    height: 500px;
+    background: black;
+    display: flex;
+}
+.kontakt{
+    width: 50%;
+    height: 100%;
+}
+form{
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    padding-top: 100px;
+}
+form>input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+form>button{
+    margin-left: 330px;
+    background: black;
+    font-size: 25px;
+    color: white;
+    font-family: none;
+
+}
+input:hover{
+    border: 2px solid green;
+}
+.kontakt1{
+    width: 49%;
+    height: 100%;
+    color: white;
+    font-family: tahoma;
+}
+.kontakt1>div>h1{
+    padding-top: 60px;
+    padding-left: 30px;
+}
+.kontakt1>div>p{
+    width: 55%;
+    padding-left: 30px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.kontakt1>div>h2{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.page6{
+    width: 100%;
+    height: 400px;
+    background: rgb(20 20 20);
+}
+.page6>div>h1{
+    text-align: center;
+    color: white;
+    font-family: tahoma;
+    font-size: 35px;
+    padding-top: 100px;
+}
+.page6>div>h2{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-size: 25px;
+}
+.hii{
+    width: 60%;
+    height: 150px;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 20px;
+    background: rgb(20 20 20);
+}
+.hii>input{
+    width: 95%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    background: rgb(20 20 20);
+    border: 2px solid white;
+
+}
+.hii>button{
+    width: 98%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background:  rgb(20 20 20);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    background: rgb(0 0 0 / 90%);
+}
+footer>h1{
+    text-align: center;
+    color: white;
+    padding-top: 60px;
+    font-size: 16px;
+}
+@media only screen and (max-width: 1100px){
+    header{
+        width: 50%;
+
+    }
+}
