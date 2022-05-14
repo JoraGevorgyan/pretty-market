@@ -1,1 +1,12 @@
-<p>buy works!</p>
+
+<div class="page3">
+<div class="card" *ngFor="let product of getProducts()">
+    <img src="/assets{{product.img}}" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>{{product.name}}</b></h4>
+        <p>{{product.description}}</p>
+    </div>
+</div>
+
+</div>
+
