@@ -17,6 +17,7 @@ type Product = {
 
 export class BuyComponent implements OnInit {
     public currentProducts: Array<Product> = [];
+
     private products: Array<Product> = [
         {
             id: 1,
@@ -28,18 +29,18 @@ export class BuyComponent implements OnInit {
         },
         {
             id: 2,
-            name: 'jins',
-            description: 'barev sencel mna vat chi',
+            name: 'heraxos',
+            description: 'vochinch patahuum a',
             img: '/products/10.jpg',
-            price: 100,
+            price: 430,
             sellPercent: 0,
         },
         {
             id: 3,
-            name: 'jins',
-            description: 'barev sencel mna vat chi',
+            name: 'backpack',
+            description: 'lavn a vonc vor',
             img: '/products/10.jpg',
-            price: 100,
+            price: 200,
             sellPercent: 0,
         },
         {
@@ -72,7 +73,7 @@ export class BuyComponent implements OnInit {
             description: 'barev sencel mna vat chi',
             img: '/products/10.jpg',
             price: 100,
-            sellPercent: 0,
+            sellPercent: 20,
         },
     ];
 
@@ -82,6 +83,21 @@ export class BuyComponent implements OnInit {
 
     }
 
+    getCurrentPrice (product: Product):number {
+        return product.price * (1- product.sellPercent/100);
+    }
+
+    searchProducts(e: any) {
+        const val = e.value.toString().toLowerCase();
+
+        if (!val) {
+            this.currentProducts = this.products;
+        } else {
+            this.currentProducts = this.products.filter(i => {
+                return i.name.toLowerCase().indexOf(val) > -1 || i.description.toLowerCase().indexOf(val) > -1;
+            })
+        }
+    }
 
     getProducts(): Array<Product> {
         //todo get products from API
