@@ -1,6 +1,6 @@
 <div class="row products">
     <div class="d-flex align-items-center ">
-        <p>search<input (keyup)="searchProducts($event)" type="search"></p>
+        <p>поиск <input (keyup)="searchProducts($event)" type="search"></p>
     </div>
 
 
@@ -10,7 +10,8 @@
             <h4><b>{{product.name}}</b></h4>
             <p>
                 <del *ngIf="product.sellPercent !== 0">{{product.price}}$</del>
-                <span>{{getCurrentPrice(product)}}$</span>
+
+                <span> {{getCurrentPrice(product)}}$</span>
             </p>
             <p>{{product.description}}</p>
         </div>

@@ -48,11 +48,11 @@ export class SellComponent implements OnInit {
     buyObj = new BuyComponent();
     addProduct() {
         if (!this.product.name || !this.product.price) {
-            alert('Name and Price are required!');
+            alert('Имя и Цена обязательны!');
             return;
         }
         this.buyObj.setProduct(this.product);
-        alert('Your product has been successfully added.')
+        alert('Ваш продукт был успешно добавлен.')
     }
     ngOnInit(): void {}
 }

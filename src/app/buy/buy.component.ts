@@ -11,30 +11,30 @@ type Product = {
 
 let products: Array<Product> = [
     {
-        name: 'jins',
-        description: 'barev sencel mna vat chi',
+        name: 'рюкзак',
+        description: 'Очень удобный рюкзак для путешествий.',
         img: '/assets/products/10.jpg',
         price: 100,
         sellPercent: 0,
     },
     {
-        name: 'heraxos',
-        description: 'vochinch patahuum a',
-        img: '/assets/products/10.jpg',
+        name: 'телефон',
+        description: 'Наслаждайтесь выполнением и приемом звонков, поиском в Интернете и многим другим.',
+        img: '/assets/products/phone.webp',
         price: 430,
         sellPercent: 14,
     },
     {
-        name: 'backpack',
-        description: 'lavn a vonc vor',
-        img: '/assets/products/10.jpg',
+        name: 'туфли',
+        description: 'Созданы специально для ваших ног.',
+        img: '/assets/products/shoes.jpg',
         price: 200,
         sellPercent: 0,
     },
     {
-        name: 'jins',
-        description: 'barev sencel mna vat chi',
-        img: '/assets/products/10.jpg',
+        name: 'джинсы',
+        description: 'В них вы почувствуете себя фотомоделью.',
+        img: '/assets/products/jeans.jpg',
         price: 100,
         sellPercent: 20,
     }
