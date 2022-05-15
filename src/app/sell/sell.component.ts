@@ -1,28 +1,58 @@
 import {Component, OnInit} from '@angular/core';
 import {BuyComponent} from "../buy/buy.component";
 
+type Product = {
+    name: string;
+    description: string;
+    img: string;
+    price: number;
+    sellPercent: number;
+};
+
 @Component({
     selector: 'app-sell',
     templateUrl: './sell.component.html',
     styleUrls: ['./sell.component.css']
 })
 export class SellComponent implements OnInit {
+    private product: Product = {
+        name: '',
+        description: '',
+        img: '',
+        price: 0,
+        sellPercent: 0
+    };
 
-    constructor() {
+    constructor() { }
+
+    setName(event: any) {
+        this.product.name = event.target.value;
     }
+
+    setDescription(event: any) {
+        this.product.description = event.target.value;
+    }
+
+    setImg(event: any) {
+        this.product.img = event.target.value;
+    }
+
+    setPrice(event: any) {
+        this.product.price = event.target.value;
+    }
+
+    setSellPercent(event: any) {
+        this.product.sellPercent = event.target.value;
+    }
+
     buyObj = new BuyComponent();
-    setPrd () {
-      let t =   {
-        name: 'jins',
-        description: 'barev sencel mna vat chi',
-        img: '/products/10.jpg',
-        price: 100,
-        sellPercent: 20,
-      };
-      this.buyObj.setProduct(t);
-      console.log(this.buyObj.getProducts());
+    addProduct() {
+        if (!this.product.name || !this.product.price) {
+            alert('Name and Price are required!');
+            return;
+        }
+        this.buyObj.setProduct(this.product);
+        alert('Your product has been successfully added.')
     }
-    ngOnInit(): void {
-    }
-
+    ngOnInit(): void {}
 }

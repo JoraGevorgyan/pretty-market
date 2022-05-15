@@ -13,49 +13,28 @@ let products: Array<Product> = [
     {
         name: 'jins',
         description: 'barev sencel mna vat chi',
-        img: '/products/10.jpg',
+        img: '/assets/products/10.jpg',
         price: 100,
         sellPercent: 0,
     },
     {
         name: 'heraxos',
         description: 'vochinch patahuum a',
-        img: '/products/10.jpg',
+        img: '/assets/products/10.jpg',
         price: 430,
-        sellPercent: 0,
+        sellPercent: 14,
     },
     {
         name: 'backpack',
         description: 'lavn a vonc vor',
-        img: '/products/10.jpg',
+        img: '/assets/products/10.jpg',
         price: 200,
         sellPercent: 0,
     },
     {
         name: 'jins',
         description: 'barev sencel mna vat chi',
-        img: '/products/10.jpg',
-        price: 100,
-        sellPercent: 0,
-    },
-    {
-        name: 'jins',
-        description: 'barev sencel mna vat chi',
-        img: '/products/10.jpg',
-        price: 100,
-        sellPercent: 0,
-    },
-    {
-        name: 'jins',
-        description: 'barev sencel mna vat chi',
-        img: '/products/10.jpg',
-        price: 100,
-        sellPercent: 0,
-    },
-    {
-        name: 'jins',
-        description: 'barev sencel mna vat chi',
-        img: '/products/10.jpg',
+        img: '/assets/products/10.jpg',
         price: 100,
         sellPercent: 20,
     }
@@ -69,7 +48,7 @@ let products: Array<Product> = [
 
 export class BuyComponent implements OnInit {
     public currentProducts: Array<Product> = [];
-
+    public defaultImgUrl = '/assets/products/12.jpg'
     constructor() {
         this.currentProducts = products;
         console.log(products)

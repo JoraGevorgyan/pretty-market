@@ -1,6 +1,8 @@
 <div style="padding-top: 150px;">
-    <button (click)="setPrd()" >
-        sdasfdsfsd
-    </button>
-
+    <p>Name*<input (keyup)="setName($event)" type="text"></p>
+    <p>Description<textarea (keyup)="setDescription($event)" ></textarea></p>
+    <p>Image url<input (keyup)="setImg($event)" type="url"></p>
+    <p>Price*<input (keyup)="setPrice($event)" type="number"></p>
+    <p>Sell percent<input (keyup)="setSellPercent($event)" type="number" min="0" max="100"></p>
+    <button (click)="addProduct()" >save</button>
 </div>
