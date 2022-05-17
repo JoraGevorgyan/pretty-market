@@ -2,12 +2,12 @@
     <fieldset>
 
         <div style="padding-top: 25px;">
-            <div class="input1"><p>Имя* <input (keyup)="setName($event)" type="text"></p></div>
-            <div class="input2"><p>Описание <textarea (keyup)="setDescription($event)"></textarea></p></div>
-            <div class="input3"><p>URL изображения <input (keyup)="setImg($event)" type="url"></p></div>
-            <div class="input4"><p>Цена* <input (keyup)="setPrice($event)" type="number"></p></div>
-            <div class="input5"><p>Процент скидки <input (keyup)="setSellPercent($event)" type="number" min="0"
-                                                         max="100"></p></div>
+            <p>Имя*<br><input (keyup)="setName($event)" type="text"></p>
+            <p>Описание<br><textarea (keyup)="setDescription($event)"></textarea></p>
+            <p>URL изображения<br><input (keyup)="setImg($event)" type="url"></p>
+            <p>Цена*<br><input (keyup)="setPrice($event)" type="number"></p>
+            <p>Процент скидки<br><input (keyup)="setSellPercent($event)" type="number" min="0"
+                                                         max="100"></p>
             <button (click)="addProduct()">СОХРАНИТЬ</button>
         </div>
 
